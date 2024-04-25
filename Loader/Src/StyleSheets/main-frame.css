@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Kawasaki Regular";
+  src: url("../Assets/Fonts/kawasaki-sans-regular.ttf");
+}
+
+@font-face {
+  font-family: "Kawasaki Medium";
+  src: url("../Assets/Fonts/kawasaki-sans-medium.ttf");
+}
+
+:root {
+  --background: #000000;
+  --font: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--background);
+  color: var(--font);
+  position: relative;
+  font-family: "Kawasaki Regular";
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.loader {
+  background-color: var(--background);
+  height: 100vh;
+  width: 100%;
+  font-family: "Kawasaki Medium";
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+  z-index: 9;
+}
+
+.loader-housing {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-housing img {
+  height: auto;
+  width: 10%;
+  mix-blend-mode: hard-light;
+}
+
+header {
+  height: 10vh;
+}
