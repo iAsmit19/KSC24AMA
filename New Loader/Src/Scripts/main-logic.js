@@ -66,7 +66,7 @@ const loaderAnimation = () => {
   let timeline = gsap.timeline({ delay: 0.1 });
   gsap.to(loaderLoadingAnimation, {
     opacity: 1,
-    duration: 2,
+    duration: 1,
     delay: 0.5,
   });
   timeline.to(loaderSpans1, {
