@@ -63,7 +63,7 @@ const loaderAnimation = () => {
   loaderSpans2.sort(() => Math.random() - 0.5);
   loaderSpans3.sort(() => Math.random() - 0.5);
 
-  let timeline = gsap.timeline({ delay: 0.5 });
+  let timeline = gsap.timeline({ delay: 0.2 });
   gsap.to(loaderLoadingAnimation, {
     opacity: 1,
     duration: 2,
