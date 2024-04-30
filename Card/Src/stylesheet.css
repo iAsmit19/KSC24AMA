@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("./Assets/Fonts/PTSans-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: black;
+  color: white;
+  font-family: "PT Sans";
+  overflow-x: hidden;
+}
+
+.root {
+  height: 100%;
+  width: 100%;
+}
+
+.section-all-models {
+  height: 100vh;
+  width: 100%;
+}
+
+.section-all-models-housing {
+  height: 100%;
+  width: 100%;
+}
+
+.heading-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.heading-container h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.dot-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.dot {
+  position: absolute;
+  background-color: #969696;
+  border-radius: 50%;
+}
+
+.shooting-star {
+  background-color: #ffffff;
+  height: 10px;
+  width: 1px;
+  position: absolute;
+  opacity: 0;
+  transform: rotate(315deg);
+}
+
+.star-1 {
+  top: 0;
+  left: 0;
+}
+
+.star-2 {
+  top: 0;
+  left: 25;
+}
+
+.star-3 {
+  top: 0;
+  left: 50;
+}

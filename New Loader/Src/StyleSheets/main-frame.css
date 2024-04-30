@@ -8,16 +8,6 @@
   src: url("../Assets/Fonts/kawasaki-sans-medium.ttf");
 }
 
-@font-face {
-  font-family: "PT Sans";
-  src: url("../Assets/Fonts/PTSans-Regular.ttf");
-}
-
-@font-face {
-  font-family: "PT Sans Bold";
-  src: url("../Assets/Fonts/PTSans-Bold.ttf");
-}
-
 :root {
   --scroll-bar: #000000;
   --scroll-thumb: #505050;
@@ -92,7 +82,6 @@ body {
   opacity: 0;
   padding: 1px;
   filter: blur(5px);
-  /* backdrop-filter: blur(5px); */
 }
 
 .loader-loading-animation {
@@ -102,7 +91,6 @@ body {
 }
 
 .loader-loading-animation-housing {
-  /* background: #1d1d1d; */
   height: 100%;
   width: 100%;
   display: flex;

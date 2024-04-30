@@ -72,35 +72,35 @@ const loaderAnimation = () => {
   timeline.to(loaderSpans1, {
     opacity: 1,
     filter: "blur(0px)",
-    stagger: 0.1,
+    stagger: 0.06,
   });
 
   timeline.to(loaderSpans1, {
     opacity: 0,
     filter: "blur(0px)",
-    stagger: 0.1,
+    stagger: 0.05,
   });
 
   timeline.to(loaderSpans2, {
     opacity: 1,
     filter: "blur(0px)",
-    stagger: 0.1,
+    stagger: 0.06,
   });
   timeline.to(loaderSpans2, {
     opacity: 0,
     filter: "blur(0px)",
-    stagger: 0.1,
+    stagger: 0.06,
   });
 
   timeline.to(loaderSpans3, {
     opacity: 1,
     filter: "blur(0px)",
-    stagger: 0.1,
+    stagger: 0.06,
   });
   timeline.to(loaderSpans3, {
     opacity: 0,
     filter: "blur(0px)",
-    stagger: 0.1,
+    stagger: 0.06,
   });
   // timeline.to(loaderLoadingAnimation, {
   //   opacity: 0,
