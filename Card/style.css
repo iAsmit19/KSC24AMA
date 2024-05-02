@@ -35,7 +35,7 @@ body {
 }
 
 .heading {
-  height: 20%;
+  height: 10%;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -49,12 +49,9 @@ body {
 }
 
 .cards-holder {
-  background: #0e0e0e;
-  height: 80%;
+  height: 90%;
   width: 100%;
   position: relative;
-  /* overflow-x: auto; */
-  /* overflow-y: hidden; */
 }
 
 .cards-holder-housing {
@@ -64,30 +61,194 @@ body {
   justify-content: start;
   align-items: center;
   gap: 5vw;
-  /* position: absolute; */
   white-space: nowrap;
-  padding-left: 50%;
+  /* padding-left: 50%; */
+  padding-inline: 10%;
 }
 
 .cards {
+  border: 1px solid rgb(54, 54, 54);
   border-radius: 1rem;
   background: #212121a2;
-  height: 45vh;
-  width: 30vw;
+  height: 540px;
+  width: 576px;
+}
+
+.cards-indicator {
+  border: none;
+  border-radius: 100rem;
+  height: 15vh;
+  width: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.cards-indicator img {
+  object-fit: contain;
+  height: 25px;
 }
 
 .cards-housing {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .cards-graphics {
-    height: 70%;
-    width: 100%;
+  height: 65%;
+  width: 100%;
 }
 
 .cards-graphics-housing {
-    height: 100%;
-    width: 100%;
-    padding: 2% 4%;
+  height: 100%;
+  width: 100%;
+  padding: 3% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cards-ambient-image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.backdrop-image {
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  object-fit: fill;
+  opacity: 0.5;
+}
+
+.cards-image-housing {
+  background: rgba(17, 17, 17, 0.382);
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 10px 20px rgba(17, 17, 17, 0.382);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cards-image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card-main-img {
+  border-radius: 1rem;
+  height: 95%;
+  width: 100%;
+}
+
+.cards-content {
+  height: 35%;
+  width: 100%;
+}
+
+.cards-content-housing {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-inline: 5%;
+}
+
+.card-text {
+  height: 100%;
+  width: 50%;
+}
+
+.card-heading {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-heading h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.card-about {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-about p {
+  color: rgb(212, 212, 212);
+  font-size: 1.05rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.card-price-tag {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.card-price-tag p {
+  color: rgb(212, 212, 212);
+  font-size: 0.8rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.card-button {
+  height: 100%;
+  width: 50%;
+}
+
+.card-button-housing {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.card-button-housing a {
+  text-decoration: none;
+}
+
+.card-button-housing a button {
+  outline: none;
+  border: none;
+  background: #000;
+  color: white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
 }

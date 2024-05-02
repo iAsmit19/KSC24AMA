@@ -1,20 +1,22 @@
 // Pin the parent container while scrolling
 ScrollTrigger.create({
-  trigger: ".container",
+  // trigger: ".container",
   start: "top top",
   end: "bottom bottom",
   pin: true,
+  scrub: 3,
 });
 
 const cardsHolder = document.querySelector(".cards-holder-housing");
-const scrollSpeed = 1.5; // Adjust the scroll speed as needed
+const scrollSpeed = 1.2; // Adjust the scroll speed as needed
 
 // Scroll the cards horizontally based on the scroll speed
 ScrollTrigger.create({
-  trigger: ".container",
+  // trigger: ".container",
   start: "top top",
   end: "bottom bottom",
-  onUpdate: (self) => {
+  scrub: 3,
+  onUpdate: () => {
     gsap.to(cardsHolder, {
       x: -window.scrollY * scrollSpeed,
       ease: "none",
